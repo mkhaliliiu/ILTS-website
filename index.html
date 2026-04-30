@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inspire Luxury Technical Services | ILTS Dubai</title>
+  <meta name="description" content="ILTS - Inspire Luxury Technical Services L.L.C. Dubai. Expert technical services including civil works, electrical, plumbing, AC maintenance and more." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@300;400;500;600&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ========== TOP BAR ========== -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span><i class="fas fa-map-marker-alt"></i> Office #409, Amiralty Tower Barsha Heights, Tecom, Dubai – UAE</span>
+        <span><i class="fas fa-phone"></i> +971 58 533 6887</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="mailto:info@ilts.ae"><i class="fas fa-envelope"></i> info@ilts.ae</a>
+        <a href="https://www.ilts.ae" target="_blank"><i class="fas fa-globe"></i> www.ilts.ae</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== DESKTOP NAVBAR ========== -->
+  <nav class="navbar desktop-nav" id="desktopNav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo.svg" alt="ILTS Logo" class="logo-img" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="./about.html" class="nav-link">About</a></li>
+        <li class="has-dropdown">
+          <a href="./services.html" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="./services.html"><i class="fas fa-th-large"></i> All Services</a></li>
+            <li><a href="./service-tile-fixing.html"><i class="fas fa-border-all"></i> Tile Fixing</a></li>
+            <li><a href="./service-block-work.html"><i class="fas fa-cubes"></i> Block Work</a></li>
+            <li><a href="./service-paint-works.html"><i class="fas fa-paint-roller"></i> Paint Works</a></li>
+            <li><a href="./service-plastering.html"><i class="fas fa-layer-group"></i> Plastering</a></li>
+            <li><a href="./service-flooring.html"><i class="fas fa-warehouse"></i> Flooring</a></li>
+            <li><a href="./service-electrical-work.html"><i class="fas fa-bolt"></i> Electrical Work</a></li>
+            <li><a href="./service-plumbing.html"><i class="fas fa-faucet"></i> Plumbing</a></li>
+            <li><a href="./service-ac-maintenance.html"><i class="fas fa-wind"></i> AC Maintenance</a></li>
+            <li><a href="./service-house-maid.html"><i class="fas fa-broom"></i> House Maid</a></li>
+          </ul>
+        </li>
+        <li><a href="./team.html" class="nav-link">Our Team</a></li>
+        <li><a href="./contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="./contact.html" class="btn-nav">Get a Quote</a>
+    </div>
+  </nav>
+
+  <!-- ========== MOBILE NAVBAR ========== -->
+  <nav class="navbar mobile-nav" id="mobileNav">
+    <div class="mobile-nav-inner">
+      <a href="./index.html" class="nav-logo">
+        <img src="assets/logo.svg" alt="ILTS Logo" class="logo-img" />
+      </a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <ul class="mobile-links">
+        <li><a href="./index.html" class="mobile-link">Home</a></li>
+        <li><a href="./about.html" class="mobile-link">About</a></li>
+        <li class="mobile-has-dropdown">
+          <a href="./services.html" class="mobile-link mobile-dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+          <ul class="mobile-dropdown">
+            <li><a href="./service-tile-fixing.html">Tile Fixing</a></li>
+            <li><a href="./service-block-work.html">Block Work</a></li>
+            <li><a href="./service-paint-works.html">Paint Works</a></li>
+            <li><a href="./service-plastering.html">Plastering</a></li>
+            <li><a href="./service-flooring.html">Flooring</a></li>
+            <li><a href="./service-electrical-work.html">Electrical Work</a></li>
+            <li><a href="./service-plumbing.html">Plumbing</a></li>
+            <li><a href="./service-ac-maintenance.html">AC Maintenance</a></li>
+            <li><a href="./service-house-maid.html">House Maid</a></li>
+          </ul>
+        </li>
+        <li><a href="./team.html" class="mobile-link">Our Team</a></li>
+        <li><a href="./contact.html" class="mobile-link">Contact</a></li>
+        <li><a href="./contact.html" class="mobile-quote-btn">Get a Quote</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="hero-shape hero-shape-1"></div>
+      <div class="hero-shape hero-shape-2"></div>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <div class="hero-tag" data-aos="fade-up">
+          <span class="tag-line"></span>
+          <span>Dubai's Premium Technical Partner</span>
+          <span class="tag-line"></span>
+        </div>
+        <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+          Where <span class="hero-accent">Luxury</span><br>Meets <span class="hero-accent">Precision</span>
+        </h1>
+        <p class="hero-desc" data-aos="fade-up" data-aos-delay="200">
+          At ILTS, we deliver top-notch technical services across industries — ensuring quality, efficiency, and innovation. From civil works to AC maintenance, we keep your spaces functional and visually stunning.
+        </p>
+        <div class="hero-ctas" data-aos="fade-up" data-aos-delay="300">
+          <a href="./services.html" class="btn-primary"><span>Explore Services</span></a>
+          <a href="./contact.html" class="btn-outline"><span>Get a Free Quote</span></a>
+        </div>
+        <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+          <div class="stat-item">
+            <span class="stat-num" data-count="500">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Projects Done</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num" data-count="9">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Services Offered</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num" data-count="100">0</span><span class="stat-plus">%</span>
+            <span class="stat-label">Client Satisfaction</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual" data-aos="fade-left" data-aos-delay="200">
+        <div class="hero-img-frame">
+          <div class="hero-img-inner">
+            <img src="assets/hero.png" alt="ILTS Dubai Building" class="hero-img" />
+            <div class="hero-img-overlay"></div>
+          </div>
+          <div class="hero-badge">
+            <div class="badge-icon"><i class="fas fa-award"></i></div>
+            <div class="badge-text">
+              <strong>Trusted</strong>
+              <span>Since Day One</span>
+            </div>
+          </div>
+          <div class="hero-card-float">
+            <i class="fas fa-check-circle"></i>
+            <span>Licensed & Certified in UAE</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== MARQUEE STRIP ========== -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>Tile Fixing</span><span class="sep">✦</span>
+      <span>Block Work</span><span class="sep">✦</span>
+      <span>Paint Works</span><span class="sep">✦</span>
+      <span>Plastering</span><span class="sep">✦</span>
+      <span>Flooring</span><span class="sep">✦</span>
+      <span>Electrical Work</span><span class="sep">✦</span>
+      <span>Plumbing Services</span><span class="sep">✦</span>
+      <span>AC Maintenance</span><span class="sep">✦</span>
+      <span>House Maid</span><span class="sep">✦</span>
+      <!-- Duplicate for seamless loop -->
+      <span>Tile Fixing</span><span class="sep">✦</span>
+      <span>Block Work</span><span class="sep">✦</span>
+      <span>Paint Works</span><span class="sep">✦</span>
+      <span>Plastering</span><span class="sep">✦</span>
+      <span>Flooring</span><span class="sep">✦</span>
+      <span>Electrical Work</span><span class="sep">✦</span>
+      <span>Plumbing Services</span><span class="sep">✦</span>
+      <span>AC Maintenance</span><span class="sep">✦</span>
+      <span>House Maid</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section class="about-section section-pad" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-col" data-aos="fade-right">
+          <div class="about-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="ILTS Team at Work" class="about-main-img" />
+            <div class="about-exp-badge">
+              <span class="exp-num">5+</span>
+              <span class="exp-text">Years of<br>Excellence</span>
+            </div>
+            <div class="about-img-accent"></div>
+          </div>
+        </div>
+        <div class="about-content-col" data-aos="fade-left">
+          <div class="section-label">Who We Are</div>
+          <h2 class="section-title">Inspire Luxury Technical <span class="accent-text">Services L.L.C</span></h2>
+          <p class="about-lead">At ILTS, our mission is to provide outstanding services tailored to meet the diverse needs of our valued clients across multiple industries.</p>
+          <p class="about-body">We take pride in our unwavering commitment to quality, efficiency, and innovation, ensuring that every project we undertake exceeds expectations. Whether it's routine maintenance, technical upgrades, or specialized services, we approach every task with precision and a focus on excellence.</p>
+          <div class="about-features">
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+              <div class="feature-text">
+                <strong>Quality Guaranteed</strong>
+                <span>Every project meets the highest standards</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-users"></i></div>
+              <div class="feature-text">
+                <strong>Skilled Professionals</strong>
+                <span>Expert team across all disciplines</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-clock"></i></div>
+              <div class="feature-text">
+                <strong>On-Time Delivery</strong>
+                <span>Projects completed within deadlines</span>
+              </div>
+            </div>
+          </div>
+          <a href="about.html" class="btn-primary"><span>Learn More About Us</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES SECTION ========== -->
+<section class="services-section" id="services">
+  <div class="services-bg-accent"></div>
+  <div class="container">
+
+    <div class="section-header" data-aos="fade-up">
+      <div class="section-label">What We Do</div>
+      <h2 class="section-title">Our Expert <span class="accent-text">Services</span></h2>
+      <p class="section-sub">Comprehensive technical solutions designed to keep your spaces functional, visually appealing, and perfectly maintained.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="service-card-img-wrap">
+          <img src="https://plus.unsplash.com/premium_photo-1683121183975-6b9fd3af9f6a?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tile Fixing" class="service-card-img" />
+        </div>
+        <div class="service-card-body">
+          <div class="service-icon-wrap"><i class="fas fa-border-all"></i></div>
+          <h3>Tile Fixing</h3>
+          <div class="service-card-divider"></div>
+          <p>Precise and durable tile installations for floors, walls, and surfaces delivering a flawless, lasting finish.</p>
+          <a href="./service-tile-fixing.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="60">
+        <div class="service-card-img-wrap">
+          <img src="https://plus.unsplash.com/premium_photo-1682142051662-eda5ad640633?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Block Work" class="service-card-img" />
+        </div>
+        <div class="service-card-body">
+          <div class="service-icon-wrap"><i class="fas fa-cubes"></i></div>
+          <h3>Block Work</h3>
+          <div class="service-card-divider"></div>
+          <p>Specialized block work services tailored to your construction project's specific requirements and standards.</p>
+          <a href="./service-block-work.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="120">
+        <div class="service-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1687062013633-f2d1a2686f09?q=80&w=873&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Paint Works" class="service-card-img" />
+        </div>
+        <div class="service-card-body">
+          <div class="service-icon-wrap"><i class="fas fa-paint-roller"></i></div>
+          <h3>Paint Works</h3>
+          <div class="service-card-divider"></div>
+          <p>Refresh your property with professional interior and exterior painting to boost its appeal and value.</p>
+          <a href="./service-paint-works.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="service-card-img-wrap">
+          <img src="https://plus.unsplash.com/premium_photo-1682361002245-7af4611c8426?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Plastering" class="service-card-img" />
+        </div>
+        <div class="service-card-body">
+          <div class="service-icon-wrap"><i class="fas fa-layer-group"></i></div>
+          <h3>Plastering</h3>
+          <div class="service-card-divider"></div>
+          <p>Smooth and durable plaster finishes for walls and ceilings with impeccable attention to detail.</p>
+          <a href="./service-plastering.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="60">
+        <div class="service-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=700&q=85" alt="Flooring" class="service-card-img" />
+        </div>
+        <div class="service-card-body">
+          <div class="service-icon-wrap"><i class="fas fa-warehouse"></i></div>
+          <h3>Flooring</h3>
+          <div class="service-card-divider"></div>
+          <p>High-quality flooring solutions for residential and commercial spaces — a perfect and lasting foundation.</p>
+          <a href="./service-flooring.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="120">
+        <div class="service-card-img-wrap">
+          <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=700&q=85" alt="Electrical Work" class="service-card-img" />
+        </div>
+        <div class="service-card-body">
+          <div class="service-icon-wrap"><i class="fas fa-bolt"></i></div>
+          <h3>Electrical Work</h3>
+          <div class="service-card-divider"></div>
+          <p>Reliable installation, repair, and maintenance of electrical systems — all compliant with UAE safety standards.</p>
+          <a href="./service-electrical.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="service-card-img-wrap">
+          <img src="https://plus.unsplash.com/premium_photo-1663045495725-89f23b57cfc5?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Plumbing Services" class="service-card-img" />
+        </div>
+        <div class="service-card-body">
+          <div class="service-icon-wrap"><i class="fas fa-faucet"></i></div>
+          <h3>Plumbing Services</h3>
+          <div class="service-card-divider"></div>
+          <p>Expert plumbing installation and maintenance ensuring flawless flow and lasting infrastructure performance.</p>
+          <a href="./service-plumbing.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="60">
+        <div class="service-card-img-wrap">
+          <img src="https://plus.unsplash.com/premium_photo-1682126012378-859ca7a9f4cf?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="AC Maintenance" class="service-card-img" />
+        </div>
+        <div class="service-card-body">
+          <div class="service-icon-wrap"><i class="fas fa-wind"></i></div>
+          <h3>AC Maintenance</h3>
+          <div class="service-card-divider"></div>
+          <p>Professional air conditioning installation, servicing, and maintenance for optimal cooling performance.</p>
+          <a href="./service-ac-maintenance.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="service-card" data-aos="fade-up" data-aos-delay="120">
+        <div class="service-card-img-wrap">
+          <img src="https://plus.unsplash.com/premium_photo-1664910908445-c902d8b80b8c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="House Maid" class="service-card-img" />
+        </div>
+        <div class="service-card-body">
+          <div class="service-icon-wrap"><i class="fas fa-broom"></i></div>
+          <h3>House Maid</h3>
+          <div class="service-card-divider"></div>
+          <p>A dedicated professional to maintain cleanliness, hygiene, and perfect order throughout your home.</p>
+          <a href="./service-house-maid.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="services-cta" data-aos="fade-up">
+      <a href="services.html" class="btn-outline-dark">View All Services</a>
+    </div>
+
+  </div>
+</section>
+
+  <!-- ========== WHY CHOOSE US ========== -->
+  <section class="why-section section-pad">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-content" data-aos="fade-right">
+          <div class="section-label">Why ILTS</div>
+          <h2 class="section-title">Trusted by Clients<br>Across <span class="accent-text">Dubai & UAE</span></h2>
+          <p class="about-body">No matter the size or scope of your project, our team is committed to providing exceptional service and unmatched quality. Let us help you bring your vision to life with precision and professionalism.</p>
+
+          <div class="why-list">
+            <div class="why-item">
+              <div class="why-num">01</div>
+              <div class="why-text">
+                <strong>Licensed & Certified</strong>
+                <span>Fully licensed operations in Dubai – UAE, compliant with all local regulations.</span>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-num">02</div>
+              <div class="why-text">
+                <strong>Expert Team</strong>
+                <span>Project managers, civil engineers, electrical engineers & site supervisors under one roof.</span>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-num">03</div>
+              <div class="why-text">
+                <strong>End-to-End Solutions</strong>
+                <span>From planning and design to execution and maintenance — we handle it all.</span>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-num">04</div>
+              <div class="why-text">
+                <strong>Client-First Approach</strong>
+                <span>Every project is tailored to meet your unique requirements and vision.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="why-visual" data-aos="fade-left">
+          <div class="why-img-stack">
+            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=500&q=80" alt="Technical Work" class="why-img-top" />
+            <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=500&q=80" alt="Electrical Work" class="why-img-bottom" />
+            <div class="why-overlap-card">
+              <i class="fas fa-star"></i>
+              <strong>5-Star Rated</strong>
+              <span>by our clients</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROCESS SECTION ========== -->
+  <section class="process-section section-pad">
+    <div class="process-bg"></div>
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <div class="section-label">How We Work</div>
+        <h2 class="section-title">Our Simple <span class="accent-text">Process</span></h2>
+        <p class="section-sub">A streamlined approach to deliver exceptional results every time.</p>
+      </div>
+      <div class="process-steps" data-aos="fade-up" data-aos-delay="100">
+        <div class="process-step">
+          <div class="step-circle">
+            <span class="step-num">01</span>
+            <i class="fas fa-comments step-icon"></i>
+          </div>
+          <div class="step-connector"></div>
+          <h4>Consultation</h4>
+          <p>We listen to your needs, assess your space, and understand your goals before anything begins.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-circle">
+            <span class="step-num">02</span>
+            <i class="fas fa-drafting-compass step-icon"></i>
+          </div>
+          <div class="step-connector"></div>
+          <h4>Planning & Quote</h4>
+          <p>We create a detailed plan and provide a transparent, competitive quotation tailored to your project.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-circle">
+            <span class="step-num">03</span>
+            <i class="fas fa-hard-hat step-icon"></i>
+          </div>
+          <div class="step-connector"></div>
+          <h4>Execution</h4>
+          <p>Our skilled team executes the project with precision, adhering to timelines and quality standards.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-circle">
+            <span class="step-num">04</span>
+            <i class="fas fa-check-double step-icon"></i>
+          </div>
+          <h4>Handover</h4>
+          <p>We conduct a thorough quality inspection and hand over your completed project with full satisfaction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== COUNTER SECTION ========== -->
+  <section class="counter-section">
+    <div class="container">
+      <div class="counter-grid">
+        <div class="counter-item" data-aos="fade-up">
+          <div class="counter-icon"><i class="fas fa-project-diagram"></i></div>
+          <span class="counter-num" data-count="500">0</span><span class="counter-plus">+</span>
+          <span class="counter-label">Projects Completed</span>
+        </div>
+        <div class="counter-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="counter-icon"><i class="fas fa-smile"></i></div>
+          <span class="counter-num" data-count="300">0</span><span class="counter-plus">+</span>
+          <span class="counter-label">Happy Clients</span>
+        </div>
+        <div class="counter-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="counter-icon"><i class="fas fa-tools"></i></div>
+          <span class="counter-num" data-count="9">0</span><span class="counter-plus">+</span>
+          <span class="counter-label">Services Offered</span>
+        </div>
+        <div class="counter-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="counter-icon"><i class="fas fa-users-cog"></i></div>
+          <span class="counter-num" data-count="50">0</span><span class="counter-plus">+</span>
+          <span class="counter-label">Skilled Professionals</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA SECTION ========== -->
+  <section class="cta-section section-pad">
+    <div class="cta-bg-pattern"></div>
+    <div class="container">
+      <div class="cta-inner" data-aos="zoom-in">
+        <div class="cta-content">
+          <div class="section-label light">Let's Work Together</div>
+          <h2 class="cta-title">Ready to Transform<br>Your Space?</h2>
+          <p>Contact us today for a free consultation and quote. Our team is ready to bring your vision to life with precision and excellence.</p>
+          <div class="cta-actions">
+            <a href="./contact.html" class="btn-white">Get a Free Quote</a>
+            <a href="tel:+971585336887" class="btn-outline-white"><i class="fas fa-phone"></i> +971 58 533 6887</a>
+          </div>
+        </div>
+        <div class="cta-visual">
+          <div class="cta-img-frame">
+            <img src="https://images.unsplash.com/photo-1590650153855-d9e808231d41?w=500&q=80" alt="Contact ILTS" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-col footer-brand">
+          <img src="assets/logo.svg" alt="ILTS Logo" class="footer-logo" />
+          <p>Inspire Luxury Technical Services L.L.C — delivering precision, innovation, and excellence across Dubai and the UAE.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./team.html">Our Team</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="./service-tile-fixing.html">Tile Fixing</a></li>
+            <li><a href="./service-block-work.html">Block Work</a></li>
+            <li><a href="./service-paint-works.html">Paint Works</a></li>
+            <li><a href="./service-plastering.html">Plastering</a></li>
+            <li><a href="./service-flooring.html">Flooring</a></li>
+            <li><a href="./service-electrical-work.html">Electrical Work</a></li>
+            <li><a href="./service-plumbing-services.html">Plumbing Services</a></li>
+            <li><a href="./service-ac-maintenance.html">AC Maintenance</a></li>
+            <li><a href="./service-house-maid.html">House Maid</a></li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact-col">
+          <h4>Contact Us</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Office #409, Amiralty Tower Barsha Heights, Tecom, Dubai – UAE</span>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+971585336887">+971 58 533 6887</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:info@ilts.ae">info@ilts.ae</a>
+            </li>
+            <li>
+              <i class="fas fa-globe"></i>
+              <a href="https://www.ilts.ae" target="_blank">www.ilts.ae</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2025 Inspire Luxury Technical Services L.L.C. All Rights Reserved.</p>
+        <p>Designed with <i class="fas fa-heart"></i> for ILTS Dubai</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/971585336887" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
